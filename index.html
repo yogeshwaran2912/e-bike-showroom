@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AV MOTORS E-Bikes | Luxury Electric Showroom</title>
+  <title>AV Motors | #1 EV Dealers in Ramanathapuram | Madurai</title>
   
   <!-- Meta tags for SEO -->
-  <meta name="description" content="Explore AV MOTORS, a premium futuristic E-Bike brand. Experience track-ready performance, solid-state battery technology, and smart GPS navigation dashboard showrooms.">
-  <meta name="keywords" content="E-bike, electric bike, premium e-bike, high performance electric motorcycle, smart dashboard, Tesla bike, Ducati electric, Ather, Revolt">
-  <meta name="author" content="AV MOTORS Automotive">
+  <meta name="description" content="AV Motors is Madurai's premier electric motorbike destination and Ramanathapuram's #1 EV dealer. Authorised dealer for iVOOMi, Battre, ONZO, and BMR.">
+  <meta name="keywords" content="AV Motors, EV Dealers Ramanathapuram, Electric Bike Showroom Madurai, Battre Storie Madurai, iVOOMi Dealer, ONZO Spark, BMR Electric Loader, Electric Scooters Madurai">
+  <meta name="author" content="AV Motors">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
@@ -32,28 +32,92 @@
 
   <!-- Loading Screen Animation -->
   <div id="loading-screen">
-    <div class="loader-logo">AV MOTORS<span>.</span></div>
+    <div class="loader-logo">AV<span> -MOTORS</span></div>
     <div class="loader-bar-container">
       <div class="loader-bar"></div>
     </div>
     <div class="loader-status">Initializing Core...</div>
   </div>
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-indicator-bar"></div>
+  </div>
+
   <!-- Floating Glassmorphism Header -->
   <header>
     <div class="container">
       <nav class="navbar" id="main-navbar">
-        <a href="#home" class="logo">AV MOTORS<span>.</span></a>
+        <a href="#home" class="logo">
+          <img src="assets/LOGO-Final.png" alt="AV Motors" class="logo-img">
+        </a>
         
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#bikes">Bikes</a></li>
-          <li><a href="#tech">Technology</a></li>
-          <li><a href="#performance">Performance</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="nav-dropdown">
+            <a href="#bikes" class="dropdown-trigger">Products <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="mega-menu">
+              <div class="mega-menu-grid">
+                <div class="mega-menu-col">
+                  <h5>AV</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="AV">AV</a></li>
+                    <li><a href="#bikes" data-bike-id="magizh-40-lite">Magizh 40 Lite</a></li>
+                    <li><a href="#bikes" data-bike-id="AV-storm">AV Storm</a></li>
+                    <li><a href="#bikes" data-bike-id="AV-fleek">AV Fleek</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Battre</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="battre-storie">Storie</a></li>
+                    <li><a href="#bikes" data-bike-id="lo-ev">LO:EV</a></li>
+                    <li><a href="#bikes" data-bike-id="dynamo">Dynamo</a></li>
+                    <li><a href="#bikes" data-bike-id="dynamo-lima">Dynamo Lima</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Gemopai</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="gemopai-astrid-lite">Gemopai Astrid Lite</a></li>
+                  </ul>
+                  <h5>ONZO</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="onzo-spark">Spark</a></li>
+                    <li><a href="#bikes" data-bike-id="sumo-loader">Sumo Loader</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>iVOOMi</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="ivoomi-s1">S1</a></li>
+                    <li><a href="#bikes" data-bike-id="ivoomi-s1-2.0">S1 2.0</a></li>
+                    <li><a href="#bikes" data-bike-id="jeet-x">Jeet X</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>BMR</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="bmr-hl-200">HL 200</a></li>
+                    <li><a href="#bikes" data-bike-id="bliss">Bliss</a></li>
+                    <li><a href="#bikes" data-bike-id="partner">Partner</a></li>
+                    <li><a href="#bikes" data-bike-id="partner-pro">Partner Pro</a></li>
+                    <li><a href="#bikes" data-bike-id="partner-pro-plus">Partner Pro Plus</a></li>
+                    <li><a href="#bikes" data-bike-id="three-wheeler-loader">Three Wheeler Loader</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-col">
+                  <h5>Accessories</h5>
+                  <ul>
+                    <li><a href="#bikes" data-bike-id="battery-charger">Battery & Charger</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#login" class="login-nav-btn">Login</a></li>
         </ul>
         
         <div class="nav-actions">
@@ -75,13 +139,35 @@
   <div class="mobile-nav">
     <ul class="mobile-nav-links">
       <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#bikes">Bikes</a></li>
-      <li><a href="#tech">Technology</a></li>
-      <li><a href="#performance">Performance</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#bikes">Products</a></li>
+      <li class="mobile-submenu">
+        <ul style="padding-left: 1.5rem; font-size: 0.9rem; list-style: none;">
+          <li><a href="#bikes" data-bike-id="AV">AV</a></li>
+          <li><a href="#bikes" data-bike-id="magizh-40-lite">Magizh 40 Lite</a></li>
+          <li><a href="#bikes" data-bike-id="AV-storm">AV Storm</a></li>
+          <li><a href="#bikes" data-bike-id="AV-fleek">AV Fleek</a></li>
+          <li><a href="#bikes" data-bike-id="battre-storie">Storie</a></li>
+          <li><a href="#bikes" data-bike-id="lo-ev">LO:EV</a></li>
+          <li><a href="#bikes" data-bike-id="dynamo">Dynamo</a></li>
+          <li><a href="#bikes" data-bike-id="dynamo-lima">Dynamo Lima</a></li>
+          <li><a href="#bikes" data-bike-id="gemopai-astrid-lite">Gemopai Astrid Lite</a></li>
+          <li><a href="#bikes" data-bike-id="ivoomi-s1">S1</a></li>
+          <li><a href="#bikes" data-bike-id="ivoomi-s1-2.0">S1 2.0</a></li>
+          <li><a href="#bikes" data-bike-id="jeet-x">Jeet X</a></li>
+          <li><a href="#bikes" data-bike-id="onzo-spark">Spark</a></li>
+          <li><a href="#bikes" data-bike-id="sumo-loader">Sumo Loader</a></li>
+          <li><a href="#bikes" data-bike-id="bmr-hl-200">HL 200</a></li>
+          <li><a href="#bikes" data-bike-id="bliss">Bliss</a></li>
+          <li><a href="#bikes" data-bike-id="partner">Partner</a></li>
+          <li><a href="#bikes" data-bike-id="partner-pro">Partner Pro</a></li>
+          <li><a href="#bikes" data-bike-id="partner-pro-plus">Partner Pro Plus</a></li>
+          <li><a href="#bikes" data-bike-id="three-wheeler-loader">Three Wheeler Loader</a></li>
+          <li><a href="#bikes" data-bike-id="battery-charger">Battery & Charger</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#login">Login</a></li>
     </ul>
     <a href="#contact" class="btn btn-primary">Book Test Ride</a>
   </div>
@@ -91,25 +177,130 @@
 
     <!-- ==================== HOME SECTION ==================== -->
     <section id="home" class="page-section active">
-      <div class="container">
-        <div class="hero-wrapper">
-          <div class="hero-content">
-            <span class="hero-tag">A New Era of Velocity</span>
-            <h1 class="hero-title">
-              AV MOTORS E-Bikes <span class="typed-text">Velocity Redefined</span>
-            </h1>
-            <p class="hero-description">
-              Experience the pinnacle of electric mobility. Engineered with liquid-cooled mid-drive powertrains, adaptive smart telemetry, and pure premium carbon fiber construction.
-            </p>
-            <div class="hero-ctas">
-              <a href="#bikes" class="btn btn-primary">Explore Showroom <i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#contact" class="btn btn-secondary">Book Test Ride</a>
+      <!-- Premium Hero Banner Slider -->
+      <div class="hero-slider">
+        <!-- Slide 1: Aadi Sale -->
+        <div class="hero-slide active" style="background-image: url('assets/Banner-01.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">AV AADI SALE — LED TV & Gold Coin</h1>
+                <p class="hero-description">Buy an E-Bike from AV Motors and get Free Service for 1 Year during this special period!</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
             </div>
-            
+          </div>
+        </div>
+
+        <!-- Slide 2: Free Service -->
+        <div class="hero-slide" style="background-image: url('assets/Banner-02.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">Buy an E-Bike from AV Motors and get Free Service for 1 Year</h1>
+                <p class="hero-description">Special warranty extension and free maintenance coverage for your first year.</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Zero Down Payment -->
+        <div class="hero-slide" style="background-image: url('assets/Banner-03.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">ZERO DOWN PAYMENT</h1>
+                <p class="hero-description">Own your next-generation electric motorbike with zero upfront cost and flexible EMI schemes.</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Book Now <i class="fa-solid fa-percent"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Discount -->
+        <div class="hero-slide" style="background-image: url('assets/Banner-04.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">₹10,000 Discount on All Electric Bikes</h1>
+                <p class="hero-description">Unbelievable price cuts on premium electric brands. Clean mobility is now more affordable.</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Book Now <i class="fa-solid fa-percent"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Roadside Assistance 1 -->
+        <div class="hero-slide" style="background-image: url('assets/SLide-Banners-Ready-assist.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">Roadside Assistance</h1>
+                <p class="hero-description">AV Motors partners with Ready Assist to offer 24/7 technical breakdown and towing backup.</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Book Now <i class="fa-solid fa-phone"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: Roadside Assistance 2 -->
+        <div class="hero-slide" style="background-image: url('assets/SLide-Banners-Ready-assist-02.png');">
+          <div class="hero-slide-overlay"></div>
+          <div class="container">
+            <div class="hero-slide-wrapper">
+              <div class="hero-slide-content">
+                <span class="hero-tag">#1 EV Dealers in Ramanathapuram</span>
+                <h1 class="hero-title">24/7 Support Network</h1>
+                <p class="hero-description">Peace of mind wherever you ride in Madurai and Ramanathapuram. Complete technical backup.</p>
+                <div class="hero-ctas">
+                  <a href="#contact" class="btn btn-primary">Book Now <i class="fa-solid fa-shield-halved"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Navigation Controls -->
+        <button class="slider-control prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-control next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+        </div>
+
+        <!-- Floating Glassmorphic Stats Overlay -->
+        <div class="hero-stats-overlay">
+          <div class="container">
             <div class="hero-stats">
               <div class="hero-stat-item">
                 <div class="hero-stat-value" id="home-stat-speed">0</div>
-                <div class="hero-stat-label">Top Velocity</div>
+                <div class="hero-stat-label">Top Speed</div>
               </div>
               <div class="hero-stat-item">
                 <div class="hero-stat-value" id="home-stat-range">0</div>
@@ -121,151 +312,491 @@
               </div>
             </div>
           </div>
-          
-          <div class="hero-visual">
-            <div class="hero-bike-glow"></div>
-            <img src="assets/hero_bike.jpg" alt="AV MOTORS Premium E-Bike" class="hero-bike-img">
-          </div>
         </div>
       </div>
-      
-      <a href="#about" class="scroll-indicator">
-        <span>Scroll to Explore</span>
-        <div class="scroll-indicator-mouse">
-          <div class="scroll-indicator-wheel"></div>
-        </div>
-      </a>
     </section>
 
-    <!-- ==================== FEATURED BIKE SECTION ==================== -->
-    <section class="featured-bike-section">
+    <!-- Promos & Offers Strip Banner -->
+    <div class="promo-strip">
+      <div class="promo-container">
+        <div class="promo-badge">AV AADI SALE</div>
+        <div class="promo-track">
+          <div class="promo-item"><i class="fa-solid fa-gift"></i> ₹10,000 Discount on All Electric Bikes</div>
+          <div class="promo-item"><i class="fa-solid fa-percentage"></i> Zero Down Payment Schemes Available</div>
+          <div class="promo-item"><i class="fa-solid fa-wrench"></i> Free Service for 1 Year on any Purchase</div>
+          <div class="promo-item"><i class="fa-solid fa-trophy"></i> Stand a chance to win a LED TV & Gold Coin!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Selling EVs Slider -->
+    <div class="slider-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Featured Model</span>
-          <h2 class="section-title">AV MOTORS Model S</h2>
-          <p class="section-subtitle">Our flagship high-performance sports machine. Drag horizontally over the frame to explore the design in a holographic 3D tilt preview.</p>
+          <span class="section-tag">Hot Releases</span>
+          <h2 class="section-title">Top Selling EVs</h2>
+          <p class="section-subtitle">Experience the most demanded, high-performance electric rides currently ruling the roads of Madurai.</p>
         </div>
         
-        <div class="featured-grid">
-          <div class="featured-showcase">
-            <div class="featured-img-container" id="hologram-preview-frame" style="cursor: grab;">
-              <span class="holo-yaw-dial" style="position: absolute; top: 1.5rem; left: 2rem; font-family: monospace; font-size: 0.75rem; color: var(--accent-primary); letter-spacing: 1px;">0° YAW</span>
-              <span class="holo-pitch-dial" style="position: absolute; top: 1.5rem; right: 2rem; font-family: monospace; font-size: 0.75rem; color: var(--text-muted); letter-spacing: 1px;">3D CAD MODE</span>
-              <img src="assets/hero_bike.jpg" alt="AV MOTORS Model S" class="featured-bike-img" style="transform-style: preserve-3d; transition: transform 0.1s ease-out;">
-            </div>
-          </div>
+        <div class="top-selling-slider-container">
+          <button class="slider-arrow prev-arrow" aria-label="Previous Ride"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="slider-arrow next-arrow" aria-label="Next Ride"><i class="fa-solid fa-arrow-right"></i></button>
           
-          <div class="featured-details">
-            <h3>Pure Performance Dynamics</h3>
-            <p class="featured-desc">
-              Unleash intense track speeds with the 8.5 kW Mid-Drive motor. The aerodynamic aerospace-grade frame combined with adaptive chassis telemetry guarantees superior handling and grip on demanding turns.
-            </p>
-            
-            <div class="spec-grid-mini">
-              <div class="spec-item-mini">
-                <div class="spec-val-mini">2.9s</div>
-                <div class="spec-lbl-mini">0-60 km/h</div>
-              </div>
-              <div class="spec-item-mini">
-                <div class="spec-val-mini">90 Nm</div>
-                <div class="spec-lbl-mini">Torque</div>
-              </div>
-              <div class="spec-item-mini">
-                <div class="spec-val-mini">180 km</div>
-                <div class="spec-lbl-mini">Range</div>
+          <div class="top-selling-track">
+            <!-- Card 1: Battre Storie -->
+            <div class="top-selling-slide">
+              <div class="featured-card">
+                <div class="featured-card-img-pane">
+                  <img src="assets/Storie.png" alt="Battre Storie">
+                </div>
+                <div class="featured-card-info-pane">
+                  <span class="feat-badge">Top Selling Scooter</span>
+                  <h3>Battre Storie</h3>
+                  <p class="feat-desc">The perfect blend of classic style and modern smart features. Designed for daily city navigation.</p>
+                  <div class="feat-specs">
+                    <span><i class="fa-solid fa-gauge-high"></i> 80 km/h</span>
+                    <span><i class="fa-solid fa-battery-three-quarters"></i> 110 km Range</span>
+                  </div>
+                  <a href="#bikes" class="btn btn-secondary feat-btn" data-bike-id="battre-storie">View details</a>
+                </div>
               </div>
             </div>
-            
-            <div class="hero-ctas" style="margin-bottom: 0;">
-              <button class="btn btn-primary" onclick="document.querySelector('.view-details-btn').click();">Configure Details</button>
-              <a href="#contact" class="btn btn-secondary">Request Brochure</a>
+
+            <!-- Card 2: Jeet X -->
+            <div class="top-selling-slide">
+              <div class="featured-card">
+                <div class="featured-card-img-pane">
+                  <img src="assets/Jeet-X-red.png" alt="iVOOMi Jeet X">
+                </div>
+                <div class="featured-card-info-pane">
+                  <span class="feat-badge">High Performance</span>
+                  <h3>iVOOMi Jeet X</h3>
+                  <p class="feat-desc">A sports electric motorcycle that delivers aggressive acceleration and track-level speed response.</p>
+                  <div class="feat-specs">
+                    <span><i class="fa-solid fa-gauge-high"></i> 80 km/h</span>
+                    <span><i class="fa-solid fa-battery-three-quarters"></i> 115 km Range</span>
+                  </div>
+                  <a href="#bikes" class="btn btn-secondary feat-btn" data-bike-id="jeet-x">View details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Partner Pro -->
+            <div class="top-selling-slide">
+              <div class="featured-card">
+                <div class="featured-card-img-pane">
+                  <img src="assets/Oscar-Partner-Pro-1.png" alt="PARTNER PRO">
+                </div>
+                <div class="featured-card-info-pane">
+                  <span class="feat-badge">Reliable Commuter</span>
+                  <h3>PARTNER PRO</h3>
+                  <p class="feat-desc">Comfortable commuter vehicle offering extraordinary battery life and rugged durability for daily use.</p>
+                  <div class="feat-specs">
+                    <span><i class="fa-solid fa-gauge-high"></i> 70 km/h</span>
+                    <span><i class="fa-solid fa-battery-three-quarters"></i> 110 km Range</span>
+                  </div>
+                  <a href="#bikes" class="btn btn-secondary feat-btn" data-bike-id="partner-pro">View details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Partner Pro Plus -->
+            <div class="top-selling-slide">
+              <div class="featured-card">
+                <div class="featured-card-img-pane">
+                  <img src="assets/Oscar-Partner-Pro-Plus.png" alt="Partner Pro Plus">
+                </div>
+                <div class="featured-card-info-pane">
+                  <span class="feat-badge">Premium Edition</span>
+                  <h3>Partner Pro Plus</h3>
+                  <p class="feat-desc">Maximum efficiency with premium paint job and upgraded power specs. The king of electric cruisers.</p>
+                  <div class="feat-specs">
+                    <span><i class="fa-solid fa-gauge-high"></i> 75 km/h</span>
+                    <span><i class="fa-solid fa-battery-three-quarters"></i> 130 km Range</span>
+                  </div>
+                  <a href="#bikes" class="btn btn-secondary feat-btn" data-bike-id="partner-pro-plus">View details</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
+    <!-- About Us Snippet Section -->
+    <div class="home-about-snippet">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-frame">
+            <img src="assets/About-us-Image-Madurai-Peoples-Fav-EVs-Biggest-showroom.png" alt="AV Motors Showroom Madurai" class="about-img">
+          </div>
+          <div class="about-content">
+            <span class="section-tag" style="text-align: left;">#1 EV Dealers in Ramanathapuram</span>
+            <h3>Welcome to AV Motors</h3>
+            <p>
+              Welcome to AV Motors, Ramanathapuram's premier electric motorbike destination. As the city's #1 Electric Motor Bike Dealers, we redefine urban commuting with cutting-edge technology and style. At AV Motors, we offer a curated selection of top-notch electric bikes, providing a sustainable and thrilling riding experience. Join us as we lead the charge in shaping the future of transportation.
+            </p>
+            <p style="margin-top: 1rem; font-weight: 700; color: var(--accent-primary);">
+              We are the main Authorised Dealers for India's Top Brands — iVOOMi | Battre | ONZO | BMR
+            </p>
+            <a href="#about" class="btn btn-primary" style="margin-top: 1.5rem;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Style and Comfort Feature -->
+    <div class="feature-highlight-section style-comfort-highlight">
+      <div class="container">
+        <div class="highlight-grid">
+          <div class="highlight-content">
+            <span class="highlight-label">Aesthetics & Ergonomics</span>
+            <h2>New Era of Style and Comfort</h2>
+            <p>
+              Unleash a new era of style and comfort with our electric motorbike. Embodying sleek aesthetics and ergonomic design, these bikes are a visual masterpiece that transforms every ride into a luxurious journey. Glide through city streets in contemporary elegance, turning heads with a design that seamlessly blends innovation and sophistication. Elevate your riding experience with the perfect fusion of style and comfort, promising not just transportation but a lifestyle choice.
+            </p>
+          </div>
+          <div class="highlight-visual">
+            <img src="assets/Oscar-Partner-Pro-1.png" alt="Ergonomic design preview" class="highlight-bike-img floating-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smart Features Feature -->
+    <div class="feature-highlight-section smart-features-highlight">
+      <div class="container">
+        <div class="highlight-grid reverse">
+          <div class="highlight-visual">
+            <img src="assets/SFV9RFM.jpg" alt="Smart Display & Sync Preview" class="highlight-bike-img floating-img-alt">
+          </div>
+          <div class="highlight-content">
+            <span class="highlight-label">Smart Telemetry</span>
+            <h2>Smart Display and NEO Sync</h2>
+            <p>
+              Stay connected on the go with integrated smart features that make your ride not only efficient but also highly intuitive. Monitor battery life, track performance metrics, and plan routes with ease using the user-friendly interface. Our electric motorbike is not just a mode of transportation; it's a lifestyle statement that aligns with your commitment to sustainability and forward-thinking living.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Grid -->
+    <div class="why-choose-us-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Av Advantage</span>
+          <h2 class="section-title">Why Choose Us</h2>
+          <p class="section-subtitle">Our commitment to excellence makes us the most trusted electric dealership across Madurai.</p>
+        </div>
+        
+        <div class="why-grid">
+          <div class="why-card">
+            <i class="fa-solid fa-motorcycle why-icon"></i>
+            <h4>Wide Range of Models</h4>
+            <p>Explore our extensive collection of electric bikes, each crafted to deliver performance, style, and sustainability. Whether you're a daily commuter, adventure seeker, or urban explorer, we have the perfect e-bike for you.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-shield-check why-icon"></i>
+            <h4>Quality Assurance</h4>
+            <p>We prioritize quality. Our electric bikes undergo various testing to ensure durability, safety, and reliability.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-users-gear why-icon"></i>
+            <h4>Customer-Centric Approach</h4>
+            <p>Our commitment to customer satisfaction sets us apart. From the moment you step into our dealership, our knowledgeable and friendly team is here to assist you in finding the ideal electric bike that suits your preferences and requirements.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-tags why-icon"></i>
+            <h4>Affordable Pricing</h4>
+            <p>We believe in making sustainable transportation accessible to all. Our goal is to make the transition to electric biking seamless and affordable for everyone in Madurai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Short Dealer Locations Locator Preview -->
+    <div class="locations-preview-home">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Find Us</span>
+          <h2 class="section-title">Our Showrooms</h2>
+          <p class="section-subtitle">AV Motors operates 6 advanced experience branches across Madurai and Pudukkottai. Drop in today!</p>
+        </div>
+        
+        <div class="branches-preview-grid">
+          <div class="branch-preview-card">
+            <h5>Ramanathapuram (Main Branch)</h5>
+            <p>3/20A, Madurai main road, Malligai Nagar, Periyar Nagar, Ramanathapuram, Tamil Nadu  – 623 502</p>
+            <a href="#contact" class="btn btn-secondary btn-nav-cta locator-trigger" data-branch="madurai-main">Go To Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Carousel -->
+    <div class="testimonials-preview-home">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Rider Reviews</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">Real feedback from daily riders. Proudly rated 4.7★ based on 31 Google reviews.</p>
+        </div>
+        
+        <div class="testimonials-wrapper">
+          <button class="testimonial-nav-btn prev" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="testimonial-nav-btn next" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+          
+          <div class="testimonial-track">
+            <!-- Review 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Customer service is extraordinary. Nice products."</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Rajeswari Rajeswari" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Rajeswari Rajeswari</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Good Service. Good quality vehicle."</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="tamil selvan" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">tamil selvan</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Excellent Products, affordable price. Especially customer service is fully satisfied."</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Dina Karan" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Dina Karan</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Review 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"I liked"</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Swesika Chellam" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Swesika Chellam</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Best place for buying E bikes 😊"</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Rajesh" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Rajesh</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Highly recommend for anyone seeking top-tier Electric motor bikes."</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Joans Milton" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Joans Milton</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <span class="testimonial-quote-icon">“</span>
+                <div class="stars-row">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Impressive electric bike showroom offering a diverse range of models, exceptional customer service, and a great environment for exploring eco-friendly transportation options."</p>
+                <div class="testimonial-profile">
+                  <img src="assets/guest.png" alt="Joshua Ranjith D" class="reviewer-avatar-img">
+                  <div>
+                    <span class="profile-name">Joshua Ranjith D</span>
+                    <span class="profile-role">Verified Reviewer • 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="#testimonials" class="btn btn-secondary">See All Reviews</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h3>Stay In The Loop</h3>
+          <p class="newsletter-desc">Subscribe to our newsletter to receive the latest promotional updates, festival sale alerts, and EV guides straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
     <!-- ==================== ABOUT SECTION ==================== -->
     <section id="about" class="page-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Our Legacy</span>
-          <h2 class="section-title">The Electric Revolution</h2>
-          <p class="section-subtitle">Born in engineering labs, designed for the future. AV MOTORS bridges the gap between raw track mechanics and luxury lifestyle transportation.</p>
+          <span class="section-tag">#1 EV Dealers in Ramanathapuram</span>
+          <h2 class="section-title">About Us</h2>
+          <p class="section-subtitle">We are the main Authorised Dealers for India's Top Brands — iVOOMi | Battre | ONZO | BMR</p>
         </div>
         
-        <div class="about-grid">
+        <div class="about-grid" style="margin-bottom: 6rem;">
           <div class="about-img-frame">
-            <img src="assets/smart_dashboard.jpg" alt="AV MOTORS Assembly Facility" class="about-img">
+            <img src="assets/About-us-Image-Madurai-Peoples-Fav-EVs-Biggest-showroom.png" alt="AV Motors showroom floor" class="about-img">
           </div>
+          
           <div class="about-content">
-            <h3>Engineering Zero Emission Velocity</h3>
+            <h3>Pioneering Sustainable Rides in Tamil Nadu</h3>
             <p>
-              Founded by automotive innovators, AV MOTORS is dedicated to building state-of-the-art electric motorcycles and smart city commuters. We design and manufacture high-efficiency motors and lightweight frames under one roof to guarantee top-tier luxury performance.
+              Welcome to AV Motors, Madurai's premier electric motorbike destination. As the city's #1 Electric Motor Bike Dealers, we redefine urban commuting with cutting-edge technology and style. At AV Motors, we offer a curated selection of top-notch electric bikes, providing a sustainable and thrilling riding experience. Join us as we lead the charge in shaping the future of transportation.
             </p>
             <p>
-              Every bike is equipped with our patented solid-state battery architecture and dynamic riding analytics that receive over-the-air updates to optimize throttle response, battery health, and peak power curves continuously.
+              Every vehicle inside our showrooms is sourced directly from India's trusted manufacturers, assuring state-of-the-art battery technologies, certified testing warranties, and top-tier smart dashboard features.
             </p>
             
             <div class="mv-grid">
               <div class="mv-card">
                 <i class="fa-solid fa-crosshairs mv-icon"></i>
                 <h4>Our Mission</h4>
-                <p>To eliminate carbon exhaust while pushing performance capabilities to track levels.</p>
+                <p>To accelerate the transition to sustainable two-wheeler transport in Madurai by providing top-quality, cost-efficient, and premium EV options.</p>
               </div>
               <div class="mv-card">
                 <i class="fa-solid fa-eye mv-icon"></i>
                 <h4>Our Vision</h4>
-                <p>Creating a future of smart, autonomous connected motorways and zero-emission luxury commuting.</p>
+                <p>Creating a futuristic city network powered by smart, clean electric vehicles, lowering carbon footprints while upgrading ride dynamics.</p>
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="stats-grid">
+
+        <!-- Authorized Brands Strip -->
+        <div class="brands-strip-wrapper">
+          <h4 class="brand-strip-title">Our Authorized Brands</h4>
+          <div class="brands-grid">
+            <div class="brand-item-logo">
+              <img src="assets/ivoomi-white-1-150x150.png" alt="iVOOMi badge">
+            </div>
+            <div class="brand-item-logo">
+              <img src="assets/Battre-white-1-150x150.png" alt="Battre badge">
+            </div>
+            <div class="brand-item-logo">
+              <img src="assets/onzo-white-1-150x150.png" alt="ONZO badge">
+            </div>
+            <div class="brand-item-logo">
+              <img src="assets/Partner-pro-plus-logo-150x150.png" alt="BMR Partner Pro Plus badge">
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid" style="margin-top: 6rem;">
           <div class="stat-card">
             <div class="stat-number" id="about-stat-bikes">0</div>
-            <div class="stat-title">Riders Worldwide</div>
+            <div class="stat-title">Happy EV Customers</div>
           </div>
           <div class="stat-card">
             <div class="stat-number" id="about-stat-dealers">0</div>
-            <div class="stat-title">Global Experience Centers</div>
+            <div class="stat-title">Experience Branches</div>
           </div>
           <div class="stat-card">
             <div class="stat-number" id="about-stat-speed">0</div>
-            <div class="stat-title">Max Speed (km/h)</div>
+            <div class="stat-title">Top Speed Class (km/h)</div>
           </div>
           <div class="stat-card">
             <div class="stat-number" id="about-stat-torque">0</div>
-            <div class="stat-title">Peak Engine Torque</div>
+            <div class="stat-title">Peak Engine Torque (Nm)</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== BIKES SECTION (CATALOG & COMPARISON) ==================== -->
+    <!-- ==================== BIKES SECTION ==================== -->
     <section id="bikes" class="page-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">AV MOTORS Fleet</span>
-          <h2 class="section-title">Explore The Showroom</h2>
-          <p class="section-subtitle">Select a category or search below to explore detailed technical specifications, customize options, or calculate premium finance EMIs.</p>
+          <span class="section-tag">AV Fleet</span>
+          <h2 class="section-title">The Showroom Fleet</h2>
+          <p class="section-subtitle">Filter or search our complete collection of electric scooters, cruisers, adventure motorbikes, and heavy loaders.</p>
         </div>
         
         <!-- Controls -->
         <div class="bikes-controls">
           <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="all">All Fleet</button>
+            <button class="filter-tab active" data-filter="all">All fleet</button>
             <button class="filter-tab" data-filter="sports">Sports</button>
             <button class="filter-tab" data-filter="city">City</button>
             <button class="filter-tab" data-filter="adventure">Adventure</button>
             <button class="filter-tab" data-filter="scooter">Scooter</button>
             <button class="filter-tab" data-filter="commuter">Commuter</button>
+            <button class="filter-tab" data-filter="loader">Loader</button>
           </div>
           
           <div class="search-box-container">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" placeholder="Search AV MOTORS Fleet..." class="search-input">
+            <input type="text" placeholder="Search AV Fleet..." class="search-input">
           </div>
         </div>
         
@@ -273,30 +804,30 @@
         <div class="bikes-grid"></div>
         
         <!-- Bike Comparison Panel -->
-        <div class="comparison-section" style="margin-top: 8rem; padding-top: 6rem; border-top: 1px solid rgba(255,255,255,0.05);">
-          <div class="section-header" style="margin-bottom: 3rem;">
-            <span class="section-tag">Telemetry Analyzer</span>
-            <h2 class="section-title" style="font-size: 2.2rem;">Compare Model Specs</h2>
-            <p class="section-subtitle">Select two models from our fleet to analyze power outputs, ranges, and acceleration indices side-by-side.</p>
+        <div class="comparison-section">
+          <div class="section-header">
+            <span class="section-tag">EV telemetry analyzer</span>
+            <h2 class="section-title">Compare Ride Specs</h2>
+            <p class="section-subtitle">Pick any two EV models from our catalog to compare range, motor power, charging time, and pricing side-by-side.</p>
           </div>
           
-          <div class="compare-selectors" style="display: flex; gap: 2rem; justify-content: center; align-items: center; margin-bottom: 3rem; flex-wrap: wrap;">
-            <div class="select-group" style="display: flex; flex-direction: column;">
-              <label for="compare-bike-1" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem; letter-spacing: 1px;">Model Alpha</label>
-              <select id="compare-bike-1" class="form-select" style="background: var(--card-bg); border: 1px solid var(--card-border); color: #fff; padding: 0.8rem 2rem; border-radius: 50px; outline: none; cursor: pointer;"></select>
+          <div class="compare-selectors">
+            <div class="select-group">
+              <label for="compare-bike-1">Model Alpha</label>
+              <select id="compare-bike-1" class="form-select"></select>
             </div>
             
-            <div style="font-family: var(--font-heading); font-weight: 900; font-size: 1.5rem; color: var(--accent-primary);">VS</div>
+            <div class="vs-text">VS</div>
             
-            <div class="select-group" style="display: flex; flex-direction: column;">
-              <label for="compare-bike-2" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem; letter-spacing: 1px;">Model Beta</label>
-              <select id="compare-bike-2" class="form-select" style="background: var(--card-bg); border: 1px solid var(--card-border); color: #fff; padding: 0.8rem 2rem; border-radius: 50px; outline: none; cursor: pointer;"></select>
+            <div class="select-group">
+              <label for="compare-bike-2">Model Beta</label>
+              <select id="compare-bike-2" class="form-select"></select>
             </div>
             
-            <button id="trigger-compare-btn" class="btn btn-primary" style="margin-top: 1.2rem;">Compare Telemetry</button>
+            <button id="trigger-compare-btn" class="btn btn-primary" style="align-self: flex-end; margin-bottom: 0.2rem;">Analyze specs</button>
           </div>
           
-          <div class="compare-results-matrix" style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 24px; padding: 2.5rem; backdrop-filter: var(--glass-blur); box-shadow: 0 20px 45px rgba(0,0,0,0.4);">
+          <div class="compare-results-matrix">
             <!-- Comparison Matrix will render dynamically from script.js -->
           </div>
         </div>
@@ -308,36 +839,36 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Core Technology</span>
-          <h2 class="section-title">The Power Grid</h2>
-          <p class="section-subtitle">Exploring the integrated digital and battery engineering that sets AV MOTORS E-Bikes at the bleeding edge of the motorcycle industry.</p>
+          <h2 class="section-title">Smart display & NEO Sync</h2>
+          <p class="section-subtitle">AV Motors brings you vehicles integrated with state-of-the-art smart software features and rugged battery packs.</p>
         </div>
         
         <div class="tech-hero">
           <div class="tech-hero-img-container">
-            <img src="assets/battery_tech.jpg" alt="AV MOTORS solid state battery pack layout" class="tech-hero-img">
+            <img src="assets/SFV9RFM.jpg" alt="AV NEO Sync Intelligent Screen Dashboard" class="tech-hero-img">
           </div>
           
           <div class="tech-hero-content">
-            <h3>Patented Solid-State Cells</h3>
+            <h3>Intelligent Riding Integration</h3>
             <p>
-              AV MOTORS leads the industry in implementing advanced solid-state energy cells. This chemical configuration delivers 40% higher energy density than traditional lithium batteries, enabling lighter frames and drastically longer riding ranges without extra chassis weight.
+              Smart Display and NEO Sync represent a major breakthrough in daily commuting telemetry. Monitor real-time battery life, log dynamic performance metrics, and pre-plan navigation routes on our vivid dashboard.
             </p>
             <p>
-              Equipped with active thermal management ducts, the battery stays within its optimal temperature window during rapid throttle adjustments or high-current Warp charge cycles, prolonging pack lifespan for up to 10 years.
+              Connected directly to a mobile app, this console pushes immediate GPS tracking alerts, geofencing protocols, and over-the-air firmware optimizations straight to the cockpit, keeping your scooter fresh and calibrated.
             </p>
             
-            <div class="spec-grid-mini" style="margin-bottom: 0;">
+            <div class="spec-grid-mini">
               <div class="spec-item-mini">
-                <div class="spec-val-mini">40%</div>
-                <div class="spec-lbl-mini">Lighter Pack</div>
+                <div class="spec-val-mini">GPS</div>
+                <div class="spec-lbl-mini">Live Tracking</div>
               </div>
               <div class="spec-item-mini">
-                <div class="spec-val-mini">180km</div>
-                <div class="spec-lbl-mini">Max Range</div>
+                <div class="spec-val-mini">OTA</div>
+                <div class="spec-lbl-mini">Firmware Updates</div>
               </div>
               <div class="spec-item-mini">
-                <div class="spec-val-mini">10 Yrs</div>
-                <div class="spec-lbl-mini">Cell Lifespan</div>
+                <div class="spec-val-mini">NEO</div>
+                <div class="spec-lbl-mini">Sync App</div>
               </div>
             </div>
           </div>
@@ -346,20 +877,20 @@
         <div class="tech-features-grid">
           <div class="tech-card">
             <i class="fa-solid fa-bolt tech-icon"></i>
-            <h4>Hyper Fast Charging</h4>
-            <p>Plug into any AV MOTORS Warp station to recover 0-80% energy in just 90 minutes. Universal home wall-box chargers can fully charge the cells overnight in 5-6 hours.</p>
+            <h4>Lithium-Ion / LFP Tech</h4>
+            <p>Advanced chemical battery cells built to endure high temperature cycles. Safe, water-resistant casing that resists severe Indian summer road heat.</p>
           </div>
           
           <div class="tech-card">
-            <i class="fa-solid fa-mobile-screen-button tech-icon"></i>
-            <h4>Smart OS Telemetry</h4>
-            <p>Sync your mobile via the AV MOTORS Rider App to configure torque output, lock/unlock via biometric sensors, view active tracking data, and receive OTA software optimizations.</p>
+            <i class="fa-solid fa-plug tech-icon"></i>
+            <h4>Fast Charging Support</h4>
+            <p>Charge up to 80% capacity in under 90 minutes using high-current fast chargers, or charge fully overnight in 4-5 hours from home wall points.</p>
           </div>
           
           <div class="tech-card">
             <i class="fa-solid fa-shield-halved tech-icon"></i>
-            <h4>Anti-Theft AI System</h4>
-            <p>Featuring active GPS geo-fencing and sensitive built-in gyro alarms. If your bike is disturbed, the wheel hub automatically locks and live telemetry feeds to your mobile.</p>
+            <h4>Anti-Theft AI Hub</h4>
+            <p>Equipped with motion-sensitive gyros and remote locks. Instantly notifies you via the smart phone app if the vehicle is moved or disturbed.</p>
           </div>
         </div>
       </div>
@@ -371,19 +902,19 @@
         <div class="section-header">
           <span class="section-tag">Performance Mode</span>
           <h2 class="section-title">Chassis Telemetry</h2>
-          <p class="section-subtitle">Switch riding modes to test simulated performance. The virtual dashboard displays speed, energy regeneration, and active cooling metrics in real-time.</p>
+          <p class="section-subtitle">Toggle through riding modes below to simulate speeds, range allocations, and active motor torque values in real time.</p>
         </div>
         
         <div class="perf-dashboard">
           <div class="perf-dash-grid">
             <div class="modes-selector-panel">
-              <h3 class="modes-title">Choose Riding Mode</h3>
+              <h3 class="modes-title">Select Simulated Mode</h3>
               
               <div class="riding-modes-btns">
                 <div class="riding-mode-btn active" data-mode="eco">
                   <div class="riding-mode-meta">
                     <h5>Eco Mode</h5>
-                    <p>Maximum range efficiency, linear throttle</p>
+                    <p>Maximum range conservation, linear throttle</p>
                   </div>
                   <div class="riding-mode-indicator"></div>
                 </div>
@@ -391,7 +922,7 @@
                 <div class="riding-mode-btn" data-mode="ride">
                   <div class="riding-mode-meta">
                     <h5>Ride Mode</h5>
-                    <p>Optimal city settings, balanced energy</p>
+                    <p>Standard city traffic calibration, balanced energy</p>
                   </div>
                   <div class="riding-mode-indicator"></div>
                 </div>
@@ -399,15 +930,15 @@
                 <div class="riding-mode-btn" data-mode="sport">
                   <div class="riding-mode-meta">
                     <h5>Sport Mode</h5>
-                    <p>Enhanced torque output, track response</p>
+                    <p>Enhanced current delivery, track level throttle</p>
                   </div>
                   <div class="riding-mode-indicator"></div>
                 </div>
                 
                 <div class="riding-mode-btn" data-mode="warp">
-                  <div class="riding-mode-meta" style="color: var(--accent-primary);">
+                  <div class="riding-mode-meta">
                     <h5>Warp Mode</h5>
-                    <p>Full 8.5 kW output, instant acceleration</p>
+                    <p>Full motor output, rapid acceleration index</p>
                   </div>
                   <div class="riding-mode-indicator"></div>
                 </div>
@@ -416,21 +947,21 @@
             
             <!-- Dashboard Display simulator -->
             <div class="sim-dashboard-display">
-              <span class="dash-warning-light"><i class="fa-solid fa-triangle-exclamation"></i> Danger: Warp Peak Current</span>
+              <span class="dash-warning-light"><i class="fa-solid fa-triangle-exclamation"></i> Warning: Peak Current Warp Mode Active</span>
               
               <div class="dash-speed-dial">
-                <div class="dash-speed-num">45</div>
+                <div class="dash-speed-num">25</div>
                 <div class="dash-speed-unit">km/h</div>
               </div>
               
               <div class="dash-specs-row">
                 <div class="dash-spec-box">
                   <div class="dash-spec-title">Estimated Range</div>
-                  <div class="dash-spec-value" id="dash-mode-range">180 km</div>
+                  <div class="dash-spec-value" id="dash-mode-range">130 km</div>
                 </div>
                 <div class="dash-spec-box">
                   <div class="dash-spec-title">Energy Regen</div>
-                  <div class="dash-spec-value" id="dash-mode-regen">High (80%)</div>
+                  <div class="dash-spec-value" id="dash-mode-regen">High (90%)</div>
                 </div>
               </div>
             </div>
@@ -440,26 +971,26 @@
         <div class="perf-specs-grid">
           <div class="perf-spec-card">
             <i class="fa-solid fa-gauge-high perf-spec-icon"></i>
-            <h4>High-Torque Delivery</h4>
-            <p>Instant torque output of up to 90 Nm ensures rapid acceleration off the line with zero turbo lag.</p>
+            <h4>High-Torque BLDC Motors</h4>
+            <p>Delivering up to 80 Nm of immediate torque, ensuring instant launch and seamless uphill climbing capability.</p>
           </div>
           
           <div class="perf-spec-card">
-            <i class="fa-solid fa-road perf-spec-icon"></i>
-            <h4>Ohlins Suspension</h4>
-            <p>Equipped with fully adjustable multi-link rear monoshocks and inverted front forks for precision cornering.</p>
+            <i class="fa-solid fa-arrows-up-down perf-spec-icon"></i>
+            <h4>Hydraulic Suspension</h4>
+            <p>Advanced telescopic front forks and twin rear hydraulic shock absorbers offer stable rides on rough roads.</p>
           </div>
           
           <div class="perf-spec-card">
-            <i class="fa-solid fa-dharmachakra perf-spec-icon"></i>
-            <h4>Brembo Braking</h4>
-            <p>Dual-channel smart ABS paired with carbon-ceramic discs ensures responsive and safe stopping distances.</p>
+            <i class="fa-solid fa-circle-dot perf-spec-icon"></i>
+            <h4>Regenerative Braking</h4>
+            <p>Dual disk brakes equipped with electronic combi-braking systems (CBS). Recovers heat energy to charge battery cells.</p>
           </div>
           
           <div class="perf-spec-card">
-            <i class="fa-solid fa-server perf-spec-icon"></i>
-            <h4>AI Traction Control</h4>
-            <p>Dynamic grip sensors monitor road friction and slippage 100 times per second to prevent power slides.</p>
+            <i class="fa-solid fa-temperature-arrow-down perf-spec-icon"></i>
+            <h4>Active Heat Cooling</h4>
+            <p>Specially routed airflow vents redirect ambient air around battery terminals, maintaining safety parameters.</p>
           </div>
         </div>
       </div>
@@ -470,57 +1001,76 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Visual Showcase</span>
-          <h2 class="section-title">Inside AV MOTORS Labs</h2>
-          <p class="section-subtitle">Get closer to the high-tech details, studio renders, and lifestyle captures of the AV MOTORS fleet. Click on any frame to activate lightbox view.</p>
+          <h2 class="section-title">The Showroom Gallery</h2>
+          <p class="section-subtitle">Get closer to the design details and experience centers of AV Motors. Click on any block to expand visual lightbox.</p>
         </div>
         
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="assets/hero_bike.jpg" alt="AV MOTORS flagship sport bike side layout" class="gallery-img">
+            <img src="assets/ChIJ8XS3yLnFADsR1u-G6zrO3ew_19760d835cba15666a6938cbbb4270ab.jpg" alt="AV Motors Showroom Gallery 1" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Studio Render</span>
-              <h4 class="gallery-title">AV MOTORS Model S Profile</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Showroom Interior</h4>
             </div>
           </div>
           
           <div class="gallery-item">
-            <img src="assets/smart_dashboard.jpg" alt="AV MOTORS smart OS screen handle layout" class="gallery-img">
+            <img src="assets/_551584052ba039f7abbfa28b9bc2d3b1.jpg" alt="AV Motors Showroom Gallery 2" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Cockpit Suite</span>
-              <h4 class="gallery-title">Smart GPS Integration</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Premium E-Bikes Showcase</h4>
             </div>
           </div>
           
           <div class="gallery-item">
-            <img src="assets/battery_tech.jpg" alt="AV MOTORS solid state battery energy pack" class="gallery-img">
+            <img src="assets/_735f7169b4f37434ed396e8b7145f01d.jpg" alt="AV Motors Showroom Gallery 3" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Engineering</span>
-              <h4 class="gallery-title">Solid State Cell Block</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">EV Commuters Fleet</h4>
             </div>
           </div>
           
           <div class="gallery-item">
-            <img src="assets/city_bike.jpg" alt="AV MOTORS city commuter commuter bike" class="gallery-img">
+            <img src="assets/_8efed8b28704ad413fd0e0c1515ee33b.jpg" alt="AV Motors Showroom Gallery 4" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Urban</span>
-              <h4 class="gallery-title">Model C City Commute</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Dealer Experience Center</h4>
             </div>
           </div>
           
           <div class="gallery-item">
-            <img src="assets/adventure_bike.jpg" alt="AV MOTORS offroad adventure suspension frame" class="gallery-img">
+            <img src="assets/_b0790e3fc123c002fa8f229c030b7d2f.jpg" alt="AV Motors Showroom Gallery 5" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Terrain</span>
-              <h4 class="gallery-title">Model A Dirt Test</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Main Entrance Display</h4>
             </div>
           </div>
           
           <div class="gallery-item">
-            <img src="assets/electric_scooter.jpg" alt="AV MOTORS electric scooter futuristic model" class="gallery-img">
+            <img src="assets/_c239b54786328f65482687f68007ec91.jpg" alt="AV Motors Showroom Gallery 6" class="gallery-img">
             <div class="gallery-info">
-              <span class="gallery-category">Aerodynamics</span>
-              <h4 class="gallery-title">Aero Scooter V Showcase</h4>
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Smart EV Delivery Area</h4>
             </div>
+          </div>
+          
+          <div class="gallery-item">
+            <img src="assets/_e8a2e2c5429e99e659e48454d8d6bbe5.jpg" alt="AV Motors Showroom Gallery 7" class="gallery-img">
+            <div class="gallery-info">
+              <span class="gallery-category">Showroom View</span>
+              <h4 class="gallery-title">Customer Service Lobby</h4>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 5rem;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">Experience The Showroom Motion</h3>
+          <!-- Hero video replay widget -->
+          <div class="video-replay-widget" style="position: relative; max-width: 800px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 1px solid var(--card-border); box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&q=80&w=800" alt="Video cover display" style="width:100%; display:block; filter: brightness(0.6);">
+            <button class="video-play-btn" aria-label="Play Showroom Film" style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%); background: var(--accent-primary); border:none; color:white; width:80px; height:80px; border-radius:50%; font-size:1.8rem; cursor:pointer; box-shadow: 0 0 20px var(--accent-glow); display:flex; align-items:center; justify-content:center; transition: var(--transition-smooth);">
+              <i class="fa-solid fa-play" style="margin-left: 5px;"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -534,96 +1084,127 @@
       </div>
     </div>
 
+    <!-- Video Modal Component -->
+    <div class="video-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 10005; align-items: center; justify-content: center;">
+      <button class="close-video-btn" aria-label="Close Video" style="position: absolute; top: 2rem; right: 2rem; background: none; border: none; color: white; font-size: 2.5rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      <div style="width: 90%; max-width: 900px; border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border);">
+        <video controls style="width: 100%; display: block;" id="modal-video-element">
+          <source src="https://oscaremotors.com/wp-content/uploads/2024/01/Website-HomePage-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
     <!-- ==================== TESTIMONIALS SECTION ==================== -->
     <section id="testimonials" class="page-section">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Rider Feedback</span>
-          <h2 class="section-title">The AV MOTORS Experience</h2>
-          <p class="section-subtitle">Read how professional racers, technology review editors, and daily commuters feel after experiencing the torque of AV MOTORS.</p>
+          <h2 class="section-title">Google reviews & ratings</h2>
+          <p class="section-subtitle">Real, unedited customer stories. AV Motors averages 4.7★ from 31 active customer reviews.</p>
         </div>
         
-        <div class="testimonials-wrapper">
-          <!-- Slider Navigation -->
-          <button class="testimonial-nav-btn prev" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
-          <button class="testimonial-nav-btn next" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
-          
-          <div class="testimonial-track">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-card">
-                <span class="testimonial-quote-icon">“</span>
-                <div class="stars-row">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="testimonial-text">
-                  "The instant torque output on the Model S is absolutely mind-blowing. I was skeptical about electric motorcycles, but the cornering grip and immediate acceleration out of apexes match my petrol track machines completely."
-                </p>
-                <div class="testimonial-profile">
-                  <div class="profile-avatar">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="Sarah Jenkins portrait">
-                  </div>
-                  <div class="profile-details">
-                    <span class="profile-name">Sarah Jenkins</span>
-                    <span class="profile-role">Superbike Racing Competitor</span>
-                  </div>
-                </div>
+        <div class="testimonials-full-grid">
+          <!-- Card 1 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Customer service is extraordinary. Nice products."</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Rajeswari Rajeswari" class="reviewer-avatar-img">
+              <div>
+                <h5>Rajeswari Rajeswari</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
               </div>
             </div>
-            
-            <!-- Testimonial 2 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-card">
-                <span class="testimonial-quote-icon">“</span>
-                <div class="stars-row">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="testimonial-text">
-                  "The smart dashboard navigation has completely transformed my daily city commute. Being able to track my battery efficiency zones and receive OTA map updates directly to my handlebars feels like riding a spaceship."
-                </p>
-                <div class="testimonial-profile">
-                  <div class="profile-avatar">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Marcus Vance portrait">
-                  </div>
-                  <div class="profile-details">
-                    <span class="profile-name">Marcus Vance</span>
-                    <span class="profile-role">Technology Editor, Wired Wheels</span>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Good Service. Good quality vehicle."</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="tamil selvan" class="reviewer-avatar-img">
+              <div>
+                <h5>tamil selvan</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
               </div>
             </div>
-            
-            <!-- Testimonial 3 -->
-            <div class="testimonial-slide">
-              <div class="testimonial-card">
-                <span class="testimonial-quote-icon">“</span>
-                <div class="stars-row">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="testimonial-text">
-                  "I take the Model A out on rough mountain trails every weekend. The battery shock protection and deep dual suspension handle drops and loose dirt incredibly well. Truly robust build quality!"
-                </p>
-                <div class="testimonial-profile">
-                  <div class="profile-avatar">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" alt="Julian Reyes portrait">
-                  </div>
-                  <div class="profile-details">
-                    <span class="profile-name">Julian Reyes</span>
-                    <span class="profile-role">Professional Offroad Rider</span>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Excellent Products, affordable price. Especially customer service is fully satisfied."</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Dina Karan" class="reviewer-avatar-img">
+              <div>
+                <h5>Dina Karan</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"I liked"</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Swesika Chellam" class="reviewer-avatar-img">
+              <div>
+                <h5>Swesika Chellam</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Best place for buying E bikes 😊"</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Rajesh" class="reviewer-avatar-img">
+              <div>
+                <h5>Rajesh</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Highly recommend for anyone seeking top-tier Electric motor bikes."</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Joans Milton" class="reviewer-avatar-img">
+              <div>
+                <h5>Joans Milton</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="full-review-card">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Impressive electric bike showroom offering a diverse range of models, exceptional customer service, and a great environment for exploring eco-friendly transportation options."</p>
+            <div class="reviewer-meta">
+              <img src="assets/guest.png" alt="Joshua Ranjith D" class="reviewer-avatar-img">
+              <div>
+                <h5>Joshua Ranjith D</h5>
+                <span>Verified Google Reviewer • 3 years ago</span>
               </div>
             </div>
           </div>
@@ -631,13 +1212,33 @@
       </div>
     </section>
 
-    <!-- ==================== CONTACT & BOOKING SECTION ==================== -->
+    <!-- ==================== CONTACT SECTION ==================== -->
     <section id="contact" class="page-section">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Booking Center</span>
-          <h2 class="section-title">Schedule A Experience</h2>
-          <p class="section-subtitle">Book a free test ride at a local showroom, submit feedback, or locate authorized service dealerships below.</p>
+          <h2 class="section-title">Schedule An Experience</h2>
+          <p class="section-subtitle">Book a free test ride, reach our dealer staff, or trace any of our 6 experience showrooms.</p>
+        </div>
+
+        <!-- Booking Process Timeline -->
+        <div class="booking-timeline">
+          <div class="timeline-step active">
+            <div class="step-num">1</div>
+            <div class="step-title">Choose Ride</div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-num">2</div>
+            <div class="step-title">Date & Branch</div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-num">3</div>
+            <div class="step-title">Fast Verification</div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-num">4</div>
+            <div class="step-title">Rev Your Ride</div>
+          </div>
         </div>
         
         <div class="contact-grid">
@@ -649,12 +1250,12 @@
               <div class="form-group-row">
                 <div class="form-group">
                   <label class="form-label" for="form-name">First Name</label>
-                  <input type="text" id="form-name" class="form-input" placeholder="e.g. John" required>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Yogesh" required>
                   <span class="error-message">This field is required.</span>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="form-lname">Last Name</label>
-                  <input type="text" id="form-lname" class="form-input" placeholder="e.g. Doe" required>
+                  <input type="text" id="form-lname" class="form-input" placeholder="e.g. TL" required>
                   <span class="error-message">This field is required.</span>
                 </div>
               </div>
@@ -662,12 +1263,12 @@
               <div class="form-group-row">
                 <div class="form-group">
                   <label class="form-label" for="form-email">Email Address</label>
-                  <input type="email" id="form-email" class="form-input" placeholder="e.g. john.doe@mail.com" required>
+                  <input type="email" id="form-email" class="form-input" placeholder="e.g. rider@oscar.com" required>
                   <span class="error-message">Enter a valid email address.</span>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="form-phone">Mobile Phone</label>
-                  <input type="tel" id="form-phone" class="form-input" placeholder="e.g. +1 555-0199" required>
+                  <input type="tel" id="form-phone" class="form-input" placeholder="e.g. +91 90805 55234" required>
                   <span class="error-message">Enter a valid mobile number.</span>
                 </div>
               </div>
@@ -677,24 +1278,29 @@
                   <label class="form-label" for="form-model">Select Model</label>
                   <select id="form-model" class="form-select" required>
                     <option value="" disabled selected>Select Bike...</option>
-                    <option value="sports">AV MOTORS Model S (Sports)</option>
-                    <option value="city">AV MOTORS Model C (City)</option>
-                    <option value="adventure">AV MOTORS Model A (Adventure)</option>
-                    <option value="scooter">AV MOTORS Scooter V (Scooter)</option>
-                    <option value="commuter">AV MOTORS Model T (Commuter)</option>
+                    <!-- Populated dynamically by script.js -->
                   </select>
                   <span class="error-message">Please select a model.</span>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="form-date">Preferred Date</label>
-                  <input type="date" id="form-date" class="form-input" required>
-                  <span class="error-message">Please pick a date.</span>
+                  <label class="form-label" for="form-branch">Select Showroom</label>
+                  <select id="form-branch" class="form-select" required>
+                    <option value="" disabled selected>Select Location...</option>
+                    <option value="Ramanathapuram Main">Ramanathapuram (Main Branch)</option>
+                  </select>
+                  <span class="error-message">Please pick a showroom.</span>
                 </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-date">Preferred Date</label>
+                <input type="date" id="form-date" class="form-input" required>
+                <span class="error-message">Please pick a date.</span>
               </div>
               
               <div class="form-group">
-                <label class="form-label" for="form-notes">Special Instructions (Optional)</label>
-                <textarea id="form-notes" class="form-textarea" placeholder="Specify if you need height configuration or have specific timing limits..."></textarea>
+                <label class="form-label" for="form-notes">Special Requests (Optional)</label>
+                <textarea id="form-notes" class="form-textarea" placeholder="Let us know if you have specific timing slots or licensing questions..."></textarea>
               </div>
               
               <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%; margin-top: 1rem;">Submit Ride Request <i class="fa-solid fa-paper-plane"></i></button>
@@ -705,30 +1311,43 @@
           <div class="contact-info-panel">
             <div class="info-cards-row">
               <div class="info-card">
-                <i class="fa-solid fa-map-location-dot info-card-icon"></i>
+                <i class="fa-solid fa-phone info-card-icon"></i>
                 <div class="info-card-content">
-                  <h5>HQ Location</h5>
-                  <p>AV MOTORS Labs Center<br>Madurai to Ramanathapuram Road, Ramanathapuram,<br>Tamil Nadu, India</p>
+                  <h5>Phone & Email</h5>
+                  <p>+91 90805 55234<br>avmotors@gmail.com</p>
                 </div>
               </div>
               <div class="info-card">
                 <i class="fa-solid fa-clock info-card-icon"></i>
                 <div class="info-card-content">
                   <h5>Business Hours</h5>
-                  <p>Mon - Fri: 9:00 AM - 7:00 PM<br>Sat - Sun: 10:00 AM - 5:00 PM<br>Holidays: Closed</p>
+                  <p>Mon – Sat: 9:00 AM – 9:00 PM<br>Sunday: Closed</p>
                 </div>
               </div>
             </div>
             
-            <!-- Simulated high-tech radar maps locator -->
-            <div class="map-placeholder-container">
-              <div class="map-placeholder-bg">
-                <div class="map-radar-ring">
-                  <i class="fa-solid fa-location-crosshairs map-marker"></i>
+            <!-- Simulated high-tech radar maps locator with drop downs for branches -->
+            <div class="dealer-locator-widget">
+              <h4 class="locator-widget-title">Branch Map Console</h4>
+              <div class="locator-branches-select-bar">
+                <button class="branch-loc-btn active" data-branch="madurai-main">Madurai Main</button>
+              </div>
+              
+              <div class="branch-details-box">
+                <h5 id="locator-branch-name">Ramanathapuram (Main Branch)</h5>
+                <p id="locator-branch-address">3/20A, Madurai main road, Malligai Nagar, Periyar Nagar, Ramanathapuram, Tamil Nadu – 623 502</p>
+              </div>
+
+              <div class="map-placeholder-container">
+                <!-- Map placeholder bg with live active radars -->
+                <div class="map-placeholder-bg" id="locator-map-iframe-container">
+                  <div class="map-radar-ring">
+                    <i class="fa-solid fa-location-dot map-marker"></i>
+                  </div>
+                  <h4 class="map-placeholder-title">AV Radar Mapping System</h4>
+                  <p class="map-placeholder-desc">Authorized location telemetry online. Grid references established.</p>
+                  <a href="https://maps.google.com" target="_blank" class="btn btn-secondary btn-nav-cta" id="directions-btn"><i class="fa-solid fa-route"></i> Get Directions</a>
                 </div>
-                <h4 class="map-placeholder-title">AV MOTORS Experience Center</h4>
-                <p class="map-placeholder-desc">Authorized dealer location pinpointed. Radar active. Live coordinate connection established.</p>
-                <button class="btn btn-secondary btn-nav-cta"><i class="fa-solid fa-route"></i> Get Directions</button>
               </div>
             </div>
           </div>
@@ -741,55 +1360,52 @@
           <div class="faq-accordion">
             <div class="faq-item">
               <div class="faq-header">
-                <h4 class="faq-question">What is the range of a solid-state battery?</h4>
+                <h4 class="faq-question">What brands are available at AV Motors?</h4>
                 <i class="fa-solid fa-plus faq-toggle-icon"></i>
               </div>
               <div class="faq-content">
                 <p class="faq-answer">
-                  Our flagship Model S gets up to 180 km on a single charge in Eco mode, while the compact City commute Model C yields 120 km. Range changes depending on terrain gradients, rider weight distribution, wind drag, and which riding modes are engaged.
+                  We are the authorised dealers for India's leading EV manufacturers: iVOOMi, Battre, ONZO, and BMR. We also retail premium models like the Partner Pro Plus and custom loaders.
                 </p>
               </div>
             </div>
             
             <div class="faq-item">
               <div class="faq-header">
-                <h4 class="faq-question">How does Warp charging technology work?</h4>
+                <h4 class="faq-question">What is the discount policy during the AV Aadi Sale?</h4>
                 <i class="fa-solid fa-plus faq-toggle-icon"></i>
               </div>
               <div class="faq-content">
                 <p class="faq-answer">
-                  Warp charging feeds high-current power directly to the cells. Our smart OS communicates continuously with the charge point to dial cooling systems and control current, enabling 0-80% power recovery in just 90 minutes safely without heating cells.
+                  Under the AV AADI SALE, we offer a flat ₹10,000 discount on all electric bike purchases, along with Zero Down Payment options, 1 year of free servicing, and a lucky draw entry to win a brand new LED TV or a Gold Coin!
                 </p>
               </div>
             </div>
             
             <div class="faq-item">
               <div class="faq-header">
-                <h4 class="faq-question">Do I need a special motorcycle driver's license?</h4>
+                <h4 class="faq-question">Do you offer loaders and industrial electric vehicles?</h4>
                 <i class="fa-solid fa-plus faq-toggle-icon"></i>
               </div>
               <div class="faq-content">
                 <p class="faq-answer">
-                  Motorcycles like the Model S and Model A require a valid standard motorcycle license. However, urban commuters like the Scooter V and Model C may fall under light electric vehicle classifications in specific states, requiring only basic driver permits.
+                  Yes, we offer heavy-duty electric commercial loaders including the Sumo Loader, BMR HL 200, and our specialized Three Wheeler Loader designed for business freight transit.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h4 class="faq-question">What are the battery specifications and warranties?</h4>
+                <i class="fa-solid fa-plus faq-toggle-icon"></i>
+              </div>
+              <div class="faq-content">
+                <p class="faq-answer">
+                  Most of our lineup features IP67-rated water-resistant Lithium-ion and LFP battery modules, providing ranges up to 130 km per charge. Manufacturer warranties range from 3 to 5 years depending on the model selected.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== NEWSLETTER SECTION ==================== -->
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-box">
-          <h3>Stay Connected</h3>
-          <p>Subscribe to our engineering newsletter to receive alerts about over-the-air firmware optimizations, new model releases, and private showroom events.</p>
-          
-          <form class="newsletter-form" onsubmit="event.preventDefault(); document.querySelector('.success-modal').classList.add('active'); this.reset();">
-            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
         </div>
       </div>
     </section>
@@ -801,8 +1417,8 @@
     <div class="success-modal-container">
       <div class="success-icon"><i class="fa-solid fa-check"></i></div>
       <h3 class="success-title">Request Transmitted</h3>
-      <p class="success-desc">Your coordinate connection has been logged. A AV MOTORS showroom representative will review schedules and reach out via mobile/email within 2 hours.</p>
-      <button class="btn btn-primary" style="margin: 0 auto;">Dismiss Console</button>
+      <p class="success-desc">Your coordinate connection has been logged. An AV Motors showroom representative will review the schedules and reach out via mobile/email within 2 hours.</p>
+      <button class="btn btn-primary" style="margin: 0 auto;" id="close-success-modal-btn">Dismiss Console</button>
     </div>
   </div>
 
@@ -814,36 +1430,42 @@
       <div class="modal-grid">
         <div class="modal-gallery-pane">
           <div class="modal-main-img-container">
-            <img src="assets/hero_bike.jpg" alt="Selected E-Bike render" class="modal-main-img">
+            <img src="assets/Storie.png" alt="Selected E-Bike render" class="modal-main-img">
           </div>
           
           <div class="color-selector-wrapper">
-            <h4 class="selector-title">Select Color Variant</h4>
+            <h4 class="selector-title">Select Variant Shade</h4>
             <div class="color-dots">
               <!-- Dots rendered dynamically via openDetailsModal -->
             </div>
+          </div>
+
+          <!-- 360 preview teaser container -->
+          <div class="teaser-360-preview" id="details-360-teaser" style="margin-top: 1.5rem; cursor: grab; background: rgba(255,255,255,0.02); border: 1px dashed var(--card-border); padding: 1rem; border-radius: 10px; text-align: center; position: relative;">
+            <span class="yaw-angle-display" style="font-family: monospace; font-size: 0.75rem; color: var(--accent-primary);">0° DRAG TO ROTATE (360°)</span>
+            <div style="font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.2rem;">Drag mouse/finger across bike above to rotate preview</div>
           </div>
         </div>
         
         <div class="modal-info-pane">
           <h2>Model Name</h2>
           <span class="category">Class</span>
-          <p class="modal-desc">Detailed descriptions of the motorcycle will load here.</p>
+          <p class="modal-desc">Detailed descriptions of the electric bike will load here.</p>
           
           <div class="modal-specs-list">
             <div class="modal-spec-card">
               <i class="fa-solid fa-gauge-high modal-spec-icon"></i>
               <div class="modal-spec-details">
                 <span class="modal-spec-label">Top Speed</span>
-                <span class="modal-spec-value" id="modal-spec-speed">120 km/h</span>
+                <span class="modal-spec-value" id="modal-spec-speed">80 km/h</span>
               </div>
             </div>
             
             <div class="modal-spec-card">
               <i class="fa-solid fa-bolt modal-spec-icon"></i>
               <div class="modal-spec-details">
-                <span class="modal-spec-label">Motor Spec</span>
-                <span class="modal-spec-value" id="modal-spec-motor">8.5 kW</span>
+                <span class="modal-spec-label">Motor Output</span>
+                <span class="modal-spec-value" id="modal-spec-motor">3.0 kW</span>
               </div>
             </div>
             
@@ -851,15 +1473,15 @@
               <i class="fa-solid fa-battery-three-quarters modal-spec-icon"></i>
               <div class="modal-spec-details">
                 <span class="modal-spec-label">Riding Range</span>
-                <span class="modal-spec-value" id="modal-spec-range">180 km</span>
+                <span class="modal-spec-value" id="modal-spec-range">110 km</span>
               </div>
             </div>
             
             <div class="modal-spec-card">
-              <i class="fa-solid fa-microchip modal-spec-icon"></i>
+              <i class="fa-solid fa-plug modal-spec-icon"></i>
               <div class="modal-spec-details">
-                <span class="modal-spec-label">Battery Pack</span>
-                <span class="modal-spec-value" id="modal-spec-battery">Solid-State</span>
+                <span class="modal-spec-label">Battery Chem</span>
+                <span class="modal-spec-value" id="modal-spec-battery">Lithium-Ion</span>
               </div>
             </div>
           </div>
@@ -868,19 +1490,19 @@
           <div class="modal-pricing-section">
             <div class="pricing-row">
               <span class="pricing-title">Ex-Showroom Price</span>
-              <span class="pricing-val">$12,999</span>
+              <span class="pricing-val">₹94,999</span>
             </div>
             
             <!-- EMI Calculator Panel -->
             <div class="emi-calc-panel">
-              <h4 class="emi-calc-title">EMI Telemetry Simulator</h4>
+              <h4 class="emi-calc-title">EMI Telemetry Simulator (8.5% p.a.)</h4>
               
               <div class="calc-slider-group">
                 <div class="slider-label-row">
                   <span>Down Payment</span>
-                  <span id="dp-val">$2,500</span>
+                  <span id="dp-val">₹10,000</span>
                 </div>
-                <input type="range" id="downpayment-slider" class="calc-range-input" min="1000" max="10000" step="100" value="2500">
+                <input type="range" id="downpayment-slider" class="calc-range-input" min="5000" max="80000" step="500" value="10000">
               </div>
               
               <div class="calc-slider-group">
@@ -892,27 +1514,61 @@
               </div>
               
               <div class="emi-results">
-                <span class="emi-result-label">Simulated Installment</span>
-                <span class="emi-result-value" id="calculated-emi-value">$0/mo</span>
+                <span class="emi-result-label">Estimated Monthly Installment</span>
+                <span class="emi-result-value" id="calculated-emi-value">₹0/mo</span>
               </div>
             </div>
           </div>
           
           <div class="modal-action-row">
-            <a href="#contact" class="btn btn-primary" onclick="modal.classList.remove('active');">Book Test Ride</a>
-            <button class="btn btn-secondary" onclick="modal.classList.remove('active');">Close Console</button>
+            <a href="#contact" class="btn btn-primary" id="modal-book-ride-btn">Book Test Ride</a>
+            <button class="btn btn-secondary" id="close-modal-btn-action">Close Console</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Futuristic Login Modal Component -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-modal-container">
+      <button class="close-login-btn" aria-label="Close Login Modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="login-box">
+        <h3>Console Authentication</h3>
+        <p>Access your AV Motors rider telemetry account.</p>
+        
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label class="form-label" for="login-email">Rider ID / Email</label>
+            <input type="email" id="login-email" class="form-input" placeholder="e.g. yogesh@oscar.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="login-pass">Passkey / Password</label>
+            <input type="password" id="login-pass" class="form-input" placeholder="••••••••" required>
+          </div>
+          
+          <div class="login-actions">
+            <label class="remember-me">
+              <input type="checkbox"> Remember console
+            </label>
+            <a href="#" class="forgot-pass">Recover key?</a>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%; margin-top: 1rem;">Authenticate <i class="fa-solid fa-key"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Floating widgets: Back to Top, WhatsApp, Live Chat -->
   <div class="floating-widgets">
-    <a href="https://wa.me/1234567890" target="_blank" class="float-widget-btn whatsapp-btn" aria-label="Connect on WhatsApp">
+    <!-- WhatsApp Chat link configured for AV Motors -->
+    <a href="https://wa.me/919543640404" target="_blank" class="float-widget-btn whatsapp-btn" aria-label="Connect on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <button class="float-widget-btn live-chat-btn" aria-label="Activate AI Chat Support" onclick="document.querySelector('.success-modal').classList.add('active');">
+    <button class="float-widget-btn live-chat-btn" aria-label="Activate AI Chat Support">
       <i class="fa-solid fa-headset"></i>
     </button>
     <button class="float-widget-btn back-to-top-btn" aria-label="Scroll Back to Top">
@@ -920,70 +1576,95 @@
     </button>
   </div>
 
+  <!-- Interactive Live Chat widget overlay (hidden by default) -->
+  <div class="live-chat-overlay" style="display: none; position: fixed; bottom: 5.5rem; right: 2rem; width: 350px; height: 450px; background: var(--bg-secondary); border: 1px solid var(--card-border); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 10002; display: flex; flex-direction: column; overflow: hidden; backdrop-filter: var(--glass-blur);">
+    <div class="chat-header" style="background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary)); padding: 1.2rem; color: white; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 0.8rem;">
+        <div style="width: 10px; height: 10px; background: #00FF66; border-radius: 50%; box-shadow: 0 0 8px #00FF66;"></div>
+        <div>
+          <h5 style="margin: 0; font-family: var(--font-heading); font-size: 1rem; font-weight: 700;">AV EV Assist</h5>
+          <span style="font-size: 0.7rem; opacity: 0.8;">Online Support Agent</span>
+        </div>
+      </div>
+      <button class="chat-close-btn" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    
+    <div class="chat-messages" style="flex: 1; padding: 1.2rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; font-size: 0.85rem;">
+      <div style="align-self: flex-start; background: rgba(255,255,255,0.05); padding: 0.8rem 1.2rem; border-radius: 15px; border-bottom-left-radius: 3px; max-width: 80%;">
+        Welcome to AV Motors! 👋 Madurai's #1 EV dealer. Ask me anything about our electric scooter collection or our special AADI SALE offers!
+      </div>
+    </div>
+    
+    <form class="chat-input-area" style="padding: 0.8rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; gap: 0.5rem;" id="chatForm">
+      <input type="text" placeholder="Type coordinate message..." style="flex: 1; padding: 0.8rem; border-radius: 50px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); color: white; outline: none; padding-left: 1.2rem;" id="chatMessageInput">
+      <button type="submit" style="background: var(--accent-primary); border: none; width: 40px; height: 40px; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 10px var(--accent-glow);"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
   <!-- Premium Footer -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-column">
-          <a href="#home" class="logo">AV MOTORS<span>.</span></a>
+          <a href="#home" class="logo">
+            <img src="assets/logo-2-2.png" alt="AV Motors" class="logo-img-alt">
+          </a>
           <p>
-            Designing the future of electric locomotion. Luxury aesthetics combined with high-grade safety electronics and track speeds.
+            Madurai's premier electric motorbike dealership and #1 EV Dealers in Ramanathapuram. Partnering with India's best green commuter brands to fuel sustainable, luxury commuting journeys.
           </p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Follow AV MOTORS on Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-link" aria-label="Follow AV MOTORS on YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="social-link" aria-label="Follow AV MOTORS on X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="Follow AV MOTORS on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/av_motors_ev_bike_showroom?igsh=MTB6bm0xYTU0OWpxMQ==" target="_blank" class="social-link" aria-label="Follow AV Motors on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919080555234" target="_blank" class="social-link" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
         
         <div class="footer-column">
-          <h4>AV MOTORS Fleet</h4>
+          <h4>Authorized Brands</h4>
           <ul class="footer-links">
-            <li><a href="#bikes">AV MOTORS Model S</a></li>
-            <li><a href="#bikes">AV MOTORS Model C</a></li>
-            <li><a href="#bikes">AV MOTORS Model A</a></li>
-            <li><a href="#bikes">AV MOTORS Scooter V</a></li>
-            <li><a href="#bikes">AV MOTORS Model T</a></li>
+            <li><a href="#about">iVOOMi E-Bikes</a></li>
+            <li><a href="#about">Battre Smart Scooters</a></li>
+            <li><a href="#about">ONZO Velocity</a></li>
+            <li><a href="#about">BMR Heavy Loaders</a></li>
+            <li><a href="#about">Partner Pro Range</a></li>
           </ul>
         </div>
         
         <div class="footer-column">
-          <h4>Technology</h4>
+          <h4>Quick Telemetry</h4>
           <ul class="footer-links">
-            <li><a href="#tech">Solid State Energy</a></li>
-            <li><a href="#tech">Warp Fast Charge</a></li>
-            <li><a href="#tech">GPS Smart HUD OS</a></li>
-            <li><a href="#performance">AI Traction Control</a></li>
-            <li><a href="#about">OTA Updates Logs</a></li>
+            <li><a href="#bikes">Explore Showroom Fleet</a></li>
+            <li><a href="#tech">NEO Sync GPS HUD</a></li>
+            <li><a href="#performance">Riding Modes Console</a></li>
+            <li><a href="#contact">Locator & Map centers</a></li>
+            <li><a href="#testimonials">Customer reviews</a></li>
           </ul>
         </div>
         
         <div class="footer-column">
-          <h4>Experience Centers</h4>
+          <h4>Showroom Hub</h4>
           <div class="footer-contact-info">
             <div class="footer-contact-item">
               <i class="fa-solid fa-location-dot footer-contact-icon"></i>
-              <span class="footer-contact-text">AV MOTORS Labs Hub<br>Madurai to Ramanathapuram Road, Ramanathapuram, Tamil Nadu</span>
+              <span class="footer-contact-text"><strong>Main Branch:</strong> No. 3/20A, Madurai main road, Malligai Nagar, Periyar Nagar, Ramanathapuram, Tamil Nadu  – 623 502</span>
             </div>
             <div class="footer-contact-item">
               <i class="fa-solid fa-phone footer-contact-icon"></i>
-              <span class="footer-contact-text">+91 90478-30596</span>
+              <span class="footer-contact-text">+91 90805 55234</span>
             </div>
             <div class="footer-contact-item">
               <i class="fa-solid fa-envelope footer-contact-icon"></i>
-              <span class="footer-contact-text">showroom@AV MOTORS-automotive.com</span>
+              <span class="footer-contact-text">avmotors@gmail.com</span>
             </div>
           </div>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <span class="copyright-text">&copy;  2026 Yogeshwaran TL. All rights reserved. Designed with passion..</span>
+        <span class="copyright-text">&copy; 2024 AV Motors | All Rights Reserved</span>
         <div class="footer-legal-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
-          <a href="#">Cookie Preferences</a>
+          <a href="#">Dealer License</a>
         </div>
       </div>
     </div>
